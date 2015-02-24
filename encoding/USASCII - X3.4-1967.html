@@ -1,0 +1,1280 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Author" content="John Love-Jensen">
+
+    <title>USASCII</title>
+  </head>
+
+  <body>
+    <h1>USASCII - X3.4-1967</h1>
+
+    <p>U.S.A. Standard Code for Information Interchange<br>
+    approved by the United States of America Standards Institute
+
+    </p><p>Also known as:
+    <br><a href="http://www.omnifarious.org/%7Eeljay/puter_iso646-us-1972.html">ISO 646-US-1972</a> -- there is one notable difference: vertical bar instead of broken vertical bar
+    <br>ISO 646-IRV-1991 -- capitalist forces displace <a href="http://www.omnifarious.org/%7Eeljay/puter_iso646-irv-1972.html">ISO 646-IRV-1972</a> with ISO 646-US-1972, establishing the new International Reference Version of ISO 646-IRV-1991.  BFD.
+
+    </p><p><a href="http://www.omnifarious.org/%7Eeljay/index.html">main</a> <a href="http://www.omnifarious.org/%7Eeljay/puter.html">computer information</a>
+    </p><hr>
+
+    <p>This is a 7-bit character set.  Holding a 7-bit character in a 
+8-bit byte is easy.  What to do with that extra bit?  Well, it's been 
+used as an even parity bit, an odd parity bit, and as extensions to the 
+glyph characters.
+
+    </p><p>IBM in their code page 437 (IBM CP437, also known as OEM437) 
+used the control characters and high-bit range for additional glyphs.  
+Sometimes to get them on the display, the programmer had to use either 
+some low level helper routines (interrupt calls), or change the bytes on
+ the video card text page by setting the bytes directly.
+
+    </p><p>Apple II's used the extra bit to indicate whether the text 
+was inverse (or blinking) or not.  With the Apple IIgs, Apple included 
+extra interesting glyphs in those ranges.
+
+    </p><p>Commodore's PET, VIC, and CBM personal computers used the 
+extra bit for their own interesting glyphs.  Like IBM, they also 
+included glyphs in the control character range.
+
+    </p><p>Other standards are supersets of X3.4-1967, or a close 
+variant such as ISO 646-US-1972.  Such standards like ISO 8859 family of
+ character sets.  Or "de facto" proprietary standards like Apple's 
+MacRoman (extended ISO 646-US-1972) or Microsoft's Win1252 (extended ISO
+ 8859-1).
+
+    </p><p>Some computers actually use the standards as is:  most Unix OS, Amiga OS, Linux OS.
+
+    </p><p>The current standard that's worthy of compliance, in my humble opinion, is ISO 10646 commonly known as [<a href="http://www.unicode.org/">Unicode</a>], currently at <i>v</i>3.0 with <i>v</i>3.1 in beta (as of this writing, 2001-Jan-17).  Using UTF-8 encoding of UCS-4 (31-bit universal character set).
+
+    </p><p>Newline sequence:  0A (LF)
+    <br>CP/M and Microsoft DOS and Windows idiosyncratically uses:  0D 0A (CR LF)
+    <br>Apple's AppleDOS, ProDOS, GS/OS and MacOS idiosyncratically uses:  0D (CR)
+    <br>Unix, AmigaOS, Linux, and many other OS's use the standard's specification.</p>
+
+    <table cellspacing="0" border="">
+      <tbody><tr>
+        <td><i>hexadecimal</i></td>
+
+        <td>
+          <center>
+            --00--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --10--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --20--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --30--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --40--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --50--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --60--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --70--
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            0
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>NUL</b></td>
+
+        <td bgcolor="#CCFFFF"><b>DLE</b></td>
+
+        <td><b>SP</b></td>
+
+        <td>
+          <center>
+            0
+          </center>
+        </td>
+
+        <td>
+          <center>
+            @
+          </center>
+        </td>
+
+        <td>
+          <center>
+            P
+          </center>
+        </td>
+
+        <td>
+          <center>
+            `
+          </center>
+        </td>
+
+        <td>
+          <center>
+            p
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            1
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>SOH</b></td>
+
+        <td bgcolor="#CCFFFF"><b>DC1</b></td>
+
+        <td>
+          <center>
+            !
+          </center>
+        </td>
+
+        <td>
+          <center>
+            1
+          </center>
+        </td>
+
+        <td>
+          <center>
+            A
+          </center>
+        </td>
+
+        <td>
+          <center>
+            Q
+          </center>
+        </td>
+
+        <td>
+          <center>
+            a
+          </center>
+        </td>
+
+        <td>
+          <center>
+            q
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            2
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>STX</b></td>
+
+        <td bgcolor="#CCFFFF"><b>DC2</b></td>
+
+        <td>
+          <center>
+            "
+          </center>
+        </td>
+
+        <td>
+          <center>
+            2
+          </center>
+        </td>
+
+        <td>
+          <center>
+            B
+          </center>
+        </td>
+
+        <td>
+          <center>
+            R
+          </center>
+        </td>
+
+        <td>
+          <center>
+            b
+          </center>
+        </td>
+
+        <td>
+          <center>
+            r
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            3
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>ETX</b></td>
+
+        <td bgcolor="#CCFFFF"><b>DC3</b></td>
+
+        <td>
+          <center>
+            #
+          </center>
+        </td>
+
+        <td>
+          <center>
+            3
+          </center>
+        </td>
+
+        <td>
+          <center>
+            C
+          </center>
+        </td>
+
+        <td>
+          <center>
+            S
+          </center>
+        </td>
+
+        <td>
+          <center>
+            c
+          </center>
+        </td>
+
+        <td>
+          <center>
+            s
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            4
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>EOT</b></td>
+
+        <td bgcolor="#CCFFFF"><b>DC4</b></td>
+
+        <td>
+          <center>
+            $
+          </center>
+        </td>
+
+        <td>
+          <center>
+            4
+          </center>
+        </td>
+
+        <td>
+          <center>
+            D
+          </center>
+        </td>
+
+        <td>
+          <center>
+            T
+          </center>
+        </td>
+
+        <td>
+          <center>
+            d
+          </center>
+        </td>
+
+        <td>
+          <center>
+            t
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            5
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>ENQ</b></td>
+
+        <td bgcolor="#CCFFFF"><b>NAK</b></td>
+
+        <td>
+          <center>
+            %
+          </center>
+        </td>
+
+        <td>
+          <center>
+            5
+          </center>
+        </td>
+
+        <td>
+          <center>
+            E
+          </center>
+        </td>
+
+        <td>
+          <center>
+            U
+          </center>
+        </td>
+
+        <td>
+          <center>
+            e
+          </center>
+        </td>
+
+        <td>
+          <center>
+            u
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            6
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>ACK</b></td>
+
+        <td bgcolor="#CCFFFF"><b>SYN</b></td>
+
+        <td>
+          <center>
+            &amp;
+          </center>
+        </td>
+
+        <td>
+          <center>
+            6
+          </center>
+        </td>
+
+        <td>
+          <center>
+            F
+          </center>
+        </td>
+
+        <td>
+          <center>
+            V
+          </center>
+        </td>
+
+        <td>
+          <center>
+            f
+          </center>
+        </td>
+
+        <td>
+          <center>
+            v
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            7
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>BEL</b></td>
+
+        <td bgcolor="#CCFFFF"><b>ETB</b></td>
+
+        <td>
+          <center>
+            '
+          </center>
+        </td>
+
+        <td>
+          <center>
+            7
+          </center>
+        </td>
+
+        <td>
+          <center>
+            G
+          </center>
+        </td>
+
+        <td>
+          <center>
+            W
+          </center>
+        </td>
+
+        <td>
+          <center>
+            g
+          </center>
+        </td>
+
+        <td>
+          <center>
+            w
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            8
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>BS</b></td>
+
+        <td bgcolor="#CCFFFF"><b>CAN</b></td>
+
+        <td>
+          <center>
+            (
+          </center>
+        </td>
+
+        <td>
+          <center>
+            8
+          </center>
+        </td>
+
+        <td>
+          <center>
+            H
+          </center>
+        </td>
+
+        <td>
+          <center>
+            X
+          </center>
+        </td>
+
+        <td>
+          <center>
+            h
+          </center>
+        </td>
+
+        <td>
+          <center>
+            x
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            9
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>HT</b></td>
+
+        <td bgcolor="#CCFFFF"><b>EM</b></td>
+
+        <td>
+          <center>
+            )
+          </center>
+        </td>
+
+        <td>
+          <center>
+            9
+          </center>
+        </td>
+
+        <td>
+          <center>
+            I
+          </center>
+        </td>
+
+        <td>
+          <center>
+            Y
+          </center>
+        </td>
+
+        <td>
+          <center>
+            i
+          </center>
+        </td>
+
+        <td>
+          <center>
+            y
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            A
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>LF</b></td>
+
+        <td bgcolor="#CCFFFF"><b>SUB</b></td>
+
+        <td>
+          <center>
+            *
+          </center>
+        </td>
+
+        <td>
+          <center>
+            :
+          </center>
+        </td>
+
+        <td>
+          <center>
+            J
+          </center>
+        </td>
+
+        <td>
+          <center>
+            Z
+          </center>
+        </td>
+
+        <td>
+          <center>
+            j
+          </center>
+        </td>
+
+        <td>
+          <center>
+            z
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            B
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>VT</b></td>
+
+        <td bgcolor="#CCFFFF"><b>ESC</b></td>
+
+        <td>
+          <center>
+            +
+          </center>
+        </td>
+
+        <td>
+          <center>
+            ;
+          </center>
+        </td>
+
+        <td>
+          <center>
+            K
+          </center>
+        </td>
+
+        <td>
+          <center>
+            [
+          </center>
+        </td>
+
+        <td>
+          <center>
+            k
+          </center>
+        </td>
+
+        <td>
+          <center>
+            {
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            C
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>FF</b></td>
+
+        <td bgcolor="#CCFFFF"><b>FS</b></td>
+
+        <td>
+          <center>
+            ,
+          </center>
+        </td>
+
+        <td>
+          <center>
+            &lt;
+          </center>
+        </td>
+
+        <td>
+          <center>
+            L
+          </center>
+        </td>
+
+        <td>
+          <center>
+            \
+          </center>
+        </td>
+
+        <td>
+          <center>
+            l
+          </center>
+        </td>
+
+        <td>
+          <center>
+            ¦
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            D
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>CR</b></td>
+
+        <td bgcolor="#CCFFFF"><b>GS</b></td>
+
+        <td>
+          <center>
+            -
+          </center>
+        </td>
+
+        <td>
+          <center>
+            =
+          </center>
+        </td>
+
+        <td>
+          <center>
+            M
+          </center>
+        </td>
+
+        <td>
+          <center>
+            ]
+          </center>
+        </td>
+
+        <td>
+          <center>
+            m
+          </center>
+        </td>
+
+        <td>
+          <center>
+            }
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            E
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>SO</b></td>
+
+        <td bgcolor="#CCFFFF"><b>RS</b></td>
+
+        <td>
+          <center>
+            .
+          </center>
+        </td>
+
+        <td>
+          <center>
+            &gt;
+          </center>
+        </td>
+
+        <td>
+          <center>
+            N
+          </center>
+        </td>
+
+        <td>
+          <center>
+            ^
+          </center>
+        </td>
+
+        <td>
+          <center>
+            n
+          </center>
+        </td>
+
+        <td>
+          <center>
+            ~
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div align="right">
+            F
+          </div>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>SI</b></td>
+
+        <td bgcolor="#CCFFFF"><b>US</b></td>
+
+        <td>
+          <center>
+            /
+          </center>
+        </td>
+
+        <td>
+          <center>
+            ?
+          </center>
+        </td>
+
+        <td>
+          <center>
+            O
+          </center>
+        </td>
+
+        <td>
+          <center>
+            _
+          </center>
+        </td>
+
+        <td>
+          <center>
+            o
+          </center>
+        </td>
+
+        <td bgcolor="#CCFFFF"><b>DEL</b></td>
+      </tr>
+    </tbody></table>
+
+    <p><i>Legend</i>
+    <table cellspacing="0" border="">
+      <tbody><tr>
+        <td bgcolor="#CCFFFF">&nbsp;</td>
+        <td>light blue background indicates a control character</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>normal colored background indicates a glyph (printable) character</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>NUL</b></td>
+        <td>null</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>SOH</b></td>
+        <td>start of heading</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>STX</b></td>
+        <td>start of text</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>ETX</b></td>
+        <td>end of text</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>EOT</b></td>
+        <td>end of transmission</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>ENQ</b></td>
+        <td>enquiry</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>ACK</b></td>
+        <td>acknowledge</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>BEL</b></td>
+        <td>bell (audible or attention signal)</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>BS</b></td>
+        <td>backspace</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>HT</b></td>
+        <td>horizontal tabulation</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>LF</b></td>
+        <td>line feed</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>VT</b></td>
+        <td>vertical tabulation</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>FF</b></td>
+        <td>form feed</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>CR</b></td>
+        <td>carriage return</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>SO</b></td>
+        <td>shift out</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>SI</b></td>
+        <td>shift in</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>DLE</b></td>
+        <td>data link escape</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>DC1</b></td>
+        <td>device control 1 (XON)</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>DC2</b></td>
+        <td>device control 2</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>DC3</b></td>
+        <td>device control 3 (XOFF)</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>DC4</b></td>
+        <td>device control 4</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>NAK</b></td>
+        <td>negative acknowledge</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>SYN</b></td>
+        <td>synchronous idle</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>ETB</b></td>
+        <td>end of transmission block</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>CAN</b></td>
+        <td>cancel</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>EM</b></td>
+        <td>end of medium</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>SUB</b></td>
+        <td>substitute</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>ESC</b></td>
+        <td>escape</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>FS</b></td>
+        <td>file separator</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>GS</b></td>
+        <td>group separator</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>RS</b></td>
+        <td>record separator</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>US</b></td>
+        <td>unit separator</td>
+      </tr>
+      <tr>
+        <td><b>SP</b></td>
+        <td>space (normally whitespace glyph)</td>
+      </tr>
+      <tr>
+        <td>'</td>
+        <td>apostrophe</td>
+      </tr>
+      <tr>
+        <td>,</td>
+        <td>comma</td>
+      </tr>
+      <tr>
+        <td>&lt;</td>
+        <td>less than</td>
+      </tr>
+      <tr>
+        <td>&gt;</td>
+        <td>greater than</td>
+      </tr>
+      <tr>
+        <td>\</td>
+        <td>reverse slant</td>
+      </tr>
+      <tr>
+        <td>¦</td>
+        <td>broken vertical bar, Latin1 and Unicode: ¦ (&amp;#166;)</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCFFFF"><b>DEL</b></td>
+        <td>delete</td>
+      </tr>
+    </tbody></table>
+
+    </p><p>Even Parity Grid (1 even parity bit + 7 data bits)
+    <table cellspacing="0" border="">
+      <tbody><tr>
+        <td><i>hexadecimal</i></td>
+
+        <td>
+          <center>
+            --00--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --10--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --20--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --30--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --40--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --50--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --60--
+          </center>
+        </td>
+
+        <td>
+          <center>
+            --70--
+          </center>
+        </td>
+      </tr>
+
+      <tr><td><div align="right">0</div></td>
+        <td bgcolor="#CCFFFF"><center>00</center></td>
+        <td bgcolor="#CCFFFF"><center><b>90</b></center></td>
+        <td><center><b>A0</b></center></td>
+        <td><center>30</center></td>
+        <td><center><b>C0</b></center></td>
+        <td><center>50</center></td>
+        <td><center>60</center></td>
+        <td><center><b>F0</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">1</div></td>
+        <td bgcolor="#CCFFFF"><center><b>81</b></center></td>
+        <td bgcolor="#CCFFFF"><center>11</center></td>
+        <td><center>21</center></td>
+        <td><center><b>B1</b></center></td>
+        <td><center>41</center></td>
+        <td><center><b>D1</b></center></td>
+        <td><center><b>E1</b></center></td>
+        <td><center>71</center></td>
+      </tr>
+
+      <tr><td><div align="right">2</div></td>
+        <td bgcolor="#CCFFFF"><center><b>82</b></center></td>
+        <td bgcolor="#CCFFFF"><center>12</center></td>
+        <td><center>22</center></td>
+        <td><center><b>B2</b></center></td>
+        <td><center>42</center></td>
+        <td><center><b>D2</b></center></td>
+        <td><center><b>E2</b></center></td>
+        <td><center>72</center></td>
+      </tr>
+
+      <tr><td><div align="right">3</div></td>
+        <td bgcolor="#CCFFFF"><center>03</center></td>
+        <td bgcolor="#CCFFFF"><center><b>93</b></center></td>
+        <td><center><b>A3</b></center></td>
+        <td><center>33</center></td>
+        <td><center><b>B3</b></center></td>
+        <td><center>53</center></td>
+        <td><center>63</center></td>
+        <td><center><b>F3</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">4</div></td>
+        <td bgcolor="#CCFFFF"><center><b>84</b></center></td>
+        <td bgcolor="#CCFFFF"><center>14</center></td>
+        <td><center>24</center></td>
+        <td><center><b>B4</b></center></td>
+        <td><center>44</center></td>
+        <td><center><b>D4</b></center></td>
+        <td><center><b>E4</b></center></td>
+        <td><center>74</center></td>
+      </tr>
+
+      <tr><td><div align="right">5</div></td>
+        <td bgcolor="#CCFFFF"><center>05</center></td>
+        <td bgcolor="#CCFFFF"><center><b>95</b></center></td>
+        <td><center><b>A5</b></center></td>
+        <td><center>35</center></td>
+        <td><center><b>C5</b></center></td>
+        <td><center>55</center></td>
+        <td><center>65</center></td>
+        <td><center><b>F5</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">6</div></td>
+        <td bgcolor="#CCFFFF"><center>06</center></td>
+        <td bgcolor="#CCFFFF"><center><b>96</b></center></td>
+        <td><center><b>A6</b></center></td>
+        <td><center>36</center></td>
+        <td><center><b>C6</b></center></td>
+        <td><center>56</center></td>
+        <td><center>66</center></td>
+        <td><center><b>F6</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">7</div></td>
+        <td bgcolor="#CCFFFF"><center><b>87</b></center></td>
+        <td bgcolor="#CCFFFF"><center>17</center></td>
+        <td><center>27</center></td>
+        <td><center><b>B7</b></center></td>
+        <td><center>47</center></td>
+        <td><center><b>D7</b></center></td>
+        <td><center><b>E7</b></center></td>
+        <td><center>77</center></td>
+      </tr>
+
+      <tr><td><div align="right">8</div></td>
+        <td bgcolor="#CCFFFF"><center><b>88</b></center></td>
+        <td bgcolor="#CCFFFF"><center>18</center></td>
+        <td><center>28</center></td>
+        <td><center><b>B8</b></center></td>
+        <td><center>48</center></td>
+        <td><center><b>D8</b></center></td>
+        <td><center><b>E8</b></center></td>
+        <td><center>78</center></td>
+      </tr>
+
+      <tr><td><div align="right">9</div></td>
+        <td bgcolor="#CCFFFF"><center>09</center></td>
+        <td bgcolor="#CCFFFF"><center><b>99</b></center></td>
+        <td><center><b>A9</b></center></td>
+        <td><center>39</center></td>
+        <td><center><b>C9</b></center></td>
+        <td><center>59</center></td>
+        <td><center>69</center></td>
+        <td><center><b>79</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">A</div></td>
+        <td bgcolor="#CCFFFF"><center>0A</center></td>
+        <td bgcolor="#CCFFFF"><center><b>9A</b></center></td>
+        <td><center><b>AA</b></center></td>
+        <td><center>3A</center></td>
+        <td><center><b>CA</b></center></td>
+        <td><center>5A</center></td>
+        <td><center>6A</center></td>
+        <td><center><b>FA</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">B</div></td>
+        <td bgcolor="#CCFFFF"><center><b>8B</b></center></td>
+        <td bgcolor="#CCFFFF"><center>1B</center></td>
+        <td><center>2B</center></td>
+        <td><center><b>BB</b></center></td>
+        <td><center>4B</center></td>
+        <td><center><b>DB</b></center></td>
+        <td><center><b>EB</b></center></td>
+        <td><center>7B</center></td>
+      </tr>
+
+      <tr><td><div align="right">C</div></td>
+        <td bgcolor="#CCFFFF"><center>0C</center></td>
+        <td bgcolor="#CCFFFF"><center><b>9C</b></center></td>
+        <td><center><b>AC</b></center></td>
+        <td><center>3C</center></td>
+        <td><center><b>CC</b></center></td>
+        <td><center>5C</center></td>
+        <td><center>6C</center></td>
+        <td><center><b>FC</b></center></td>
+      </tr>
+
+      <tr><td><div align="right">D</div></td>
+        <td bgcolor="#CCFFFF"><center><b>8D</b></center></td>
+        <td bgcolor="#CCFFFF"><center>1D</center></td>
+        <td><center>2D</center></td>
+        <td><center><b>BD</b></center></td>
+        <td><center>4D</center></td>
+        <td><center><b>DD</b></center></td>
+        <td><center><b>ED</b></center></td>
+        <td><center>7D</center></td>
+      </tr>
+
+      <tr><td><div align="right">E</div></td>
+        <td bgcolor="#CCFFFF"><center><b>8E</b></center></td>
+        <td bgcolor="#CCFFFF"><center>1E</center></td>
+        <td><center>2E</center></td>
+        <td><center><b>BE</b></center></td>
+        <td><center>4E</center></td>
+        <td><center><b>DE</b></center></td>
+        <td><center><b>EE</b></center></td>
+        <td><center>7E</center></td>
+      </tr>
+
+      <tr><td><div align="right">F</div></td>
+        <td bgcolor="#CCFFFF"><center>0F</center></td>
+        <td bgcolor="#CCFFFF"><center><b>9F</b></center></td>
+        <td><center><b>AF</b></center></td>
+        <td><center>3F</center></td>
+        <td><center><b>CF</b></center></td>
+        <td><center>5F</center></td>
+        <td><center>6F</center></td>
+        <td bgcolor="#CCFFFF"><center><b>FF</b></center></td>
+      </tr>
+
+    </tbody></table>
+
+    </p><hr>
+    <p><i>Lovingly handcrafted HTML, using VIM.</i><br>
+    <i>Best viewed with a computer.</i></p>
+  
+
+</body></html>
