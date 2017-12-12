@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg fill-opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="white" stroke-linecap="square" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="white" stroke-dasharray="none" font-weight="normal" stroke-width="1" xmlns="http://www.w3.org/2000/svg" font-family="&apos;Dialog&apos;" font-style="normal" stroke-linejoin="miter" font-size="12" stroke-dashoffset="0" image-rendering="auto">
+  <!--Unicode Character 'INVERTED PENTAGRAM' (U+26E7)-->
+  <defs id="genericDefs" />
+  <g>
+    <g>
+      <path d="M273.9375 235.2656 L174.6562 235.2656 L144 329.7656 L113.3438 235.2656 L14.0625 235.2656 L94.3594 176.9062 L63.7031 82.5469 L144 140.9062 L224.2969 82.5469 L193.6406 176.9062 L273.9375 235.2656 ZM192.2344 126.7031 L158.3438 151.3125 L179.2969 166.5 L192.2344 126.7031 ZM222.0469 218.3906 L188.1562 193.7812 L180.1406 218.3906 L222.0469 218.3906 ZM129.6562 151.3125 L95.7656 126.7031 L108.7031 166.5 L129.6562 151.3125 ZM173.8125 183.375 L144 161.7188 L114.1875 183.375 L125.5781 218.3906 L162.4219 218.3906 L173.8125 183.375 ZM156.9375 235.2656 L131.0625 235.2656 L144 275.0625 L156.9375 235.2656 ZM107.8594 218.3906 L99.8438 193.7812 L65.9531 218.3906 L107.8594 218.3906 Z" stroke="none" />
+    </g>
+  </g>
+</svg>
