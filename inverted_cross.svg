@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	xmlns:svg="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve">
+	<title>Bars plot</title>
+	<g transform="translate(0,-952.36217)">
+		<path style="" d="m 78.5,1016.8621 -23.749992,10e-5 0,29 -9.500016,0 0,-29 -23.749992,-10e-5 0,-9.6666 23.749992,10e-5 0,-48.33345 9.500016,0 0,48.33345 23.749992,-10e-5 z" fill="black" stroke="red" stroke-width="3" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1" />
+	</g>
+</svg>
