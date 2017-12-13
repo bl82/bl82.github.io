@@ -51,20 +51,20 @@
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
-  <polygon
-     points="139.6,192.1 -225.9,-73.4 225.9,-73.4 -139.6,192.1 0,-237.5 "
-     transform="matrix(0.79870176,0,0,-0.79870176,269.5,268.65761)"
-     style="fill:none;stroke:#ffffff;stroke-width:22;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     id="polygon4" />
   <circle
      cx="240"
      cy="240"
-     r="237.5"
+     r="180"
      id="circle6"
-     style="fill:none;stroke:#ffffff;stroke-width:22;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:black;stroke:#ffffff;stroke-width:22;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      sodipodi:cx="240"
      sodipodi:cy="240"
-     sodipodi:rx="237.5"
-     sodipodi:ry="237.5"
+     sodipodi:rx="180"
+     sodipodi:ry="180"
      transform="translate(29.5,29.5)" />
+	<polygon
+     points="139.6,192.1 -225.9,-73.4 225.9,-73.4 -139.6,192.1 0,-237.5 "
+     transform="matrix(0.79870176,0,0,-0.79870176,269.5,268.65761)"
+     style="fill:red;stroke:#ffffff;stroke-width:22;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="polygon4" />
 </svg>
